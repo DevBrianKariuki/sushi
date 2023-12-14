@@ -4,3 +4,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#main-div{
+    height: 100%;
+    min-height: 100vh;
+}
