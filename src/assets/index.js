@@ -10,8 +10,21 @@ import SushiCombo from './Sushi Combo.png'
 import SushiSalad from './Sushi Salad.png'
 import menu from './menu.png'
 import close from './close.png'
+import person1 from './person1.jpg'
+import person2 from './person2.jpg'
+import person3 from './person3.jpg'
+import Catering from './Catering.png'
+import GiftCards  from './Gift Cards.png'
+import FastDelivery from './Fast Delivery.png'
+import OnlineOrdering from './Online Ordering.png'
+
+
 
 export {
+    Catering,
+    GiftCards, 
+    FastDelivery, 
+    OnlineOrdering,
     Breakfast,
     BrowseAll,
     Chef,
@@ -23,5 +36,8 @@ export {
     SushiCombo,
     SushiSalad,
     menu,
-    close
+    close,
+    person1,
+    person2,
+    person3
 }

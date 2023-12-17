@@ -23,10 +23,10 @@ const Navbar = () => {
           <p className='font-inter text-md text-center hover:font-bold  hover:text-primary'>Offers</p>
         </div>
 
-        <div className='flex gap-3 hidden sm:flex items-center'>
+        <div className='flex w-full gap-3 hidden sm:flex items-center'>
           < FaSearch fontSize={24} className='text-black object-contain' />
           < IoCartOutline fontSize={24} className='text-black object-contain' />
-          <button className='w-full bg-primary w-[60px] rounded-full text-white font-afacad font-medium text-lg'>Contact</button>
+          <button className='font-inter bg-primary text-white rounded-full py-3 px-5'>Contact Us</button>
         </div>
 
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         onClick={()=>setToggle(!toggle)}
         />
 
-        <div className={` ${ toggle ? 'flex' : 'hidden' } border-t-2 border-b-2 border-primary flex flex-col absolute px-8 shadow-xl rounded-xl top-12 right-0 z-50 py-8 w-[250px]`}>
+        <div className={` ${ toggle ? 'flex' : 'hidden' } border-t-2 border-b-2 border-primary flex flex-col absolute px-8 shadow-xl rounded-xl top-12 right-0 z-250 py-8 w-[250px]`}>
           <div className='flex w-full flex-col items-center gap-4'>
             <p className='font-inter w-full text-center text-lg font-medium border-b-[1px] text-primary'>Home</p>
             <p className='font-inter text-lg w-full text-center hover:text-primary'>Menu</p>
