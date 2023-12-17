@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         primary: "#39DB4A",
-        gray: "#555555",
+        gray: "#666666",
       },
       fontFamily: {
         afacad: ["Afacad", "sans-serif"],
