@@ -3,12 +3,13 @@ import { IoCartOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { logo, menu, close } from '../assets'
 import { Menu } from '../constants/constants';
+import { FaPhone } from 'react-icons/fa6';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
-    <div className='w-full py-8 flex items-center justify-between'>
+    <div className='w-full py-8 flex items-center md:justify-start justify-between'>
         <div className='w-full'>
             <img src={logo} className='w-[90px]' />
         </div>
@@ -29,7 +30,7 @@ const Navbar = () => {
           < IoCartOutline fontSize={24} className='text-black object-contain' />
               <div className="absolute inline-flex items-center font-inter justify-center w-6 h-6 text-xs font-bold text-white bg-primary border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">0</div>
           </button>
-          <button className='font-inter bg-primary text-white rounded-full py-3 px-5'>Contact Us</button>
+          <button className='font-inter bg-primary text-white flex items-center gap-4 rounded-full py-3 px-5'><FaPhone/> Contact Us</button>
         </div>
 
 
