@@ -25,7 +25,10 @@ const Navbar = () => {
 
         <div className='flex w-full gap-3 hidden sm:flex items-center'>
           < FaSearch fontSize={24} className='text-black object-contain' />
+          <button type="button" className="relative inline-flex items-center p-2 text-sm font-medium text-center focus:outline-none">
           < IoCartOutline fontSize={24} className='text-black object-contain' />
+              <div className="absolute inline-flex items-center font-inter justify-center w-6 h-6 text-xs font-bold text-white bg-primary border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">0</div>
+          </button>
           <button className='font-inter bg-primary text-white rounded-full py-3 px-5'>Contact Us</button>
         </div>
 

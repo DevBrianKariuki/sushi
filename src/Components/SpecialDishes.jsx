@@ -1,16 +1,23 @@
-import React from 'react'
+import React , {useEffect} from 'react'
 import { IoIosArrowBack, IoIosArrowForward, IoLogoLinkedin } from "react-icons/io";
 import { CiHeart } from "react-icons/ci";
 import { FaStar } from "react-icons/fa";
 import { dishes } from '../constants/constants';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const SpecialDishes = () => {
+
+  useEffect(() => {
+    AOS.init({duration: 2000})
+  }, [])
+
   return (
     <div className='w-full py-8 mt-12 flex flex-col items-center'>
       <div className='flex w-full flex-col md:flex-row justify-between'>
         <div className='flex flex-col w-full md:items-start justify-center items-center gap-4'>
-          <p className='font-inter uppercase font-bold text-red-500'>Special Dishes</p>
-          <h1 className='font-inter font-bold md:text-left text-center text-4xl'>Best Dishes from<br className='hidden sm:flex' /> Our Menu</h1>
+          <p data-aos="zoom-in" className='font-inter uppercase font-bold text-red-500'>Special Dishes</p>
+          <h1 data-aos="zoom-out" className='font-inter font-bold md:text-left text-center text-4xl'>Best Dishes from<br className='hidden sm:flex' /> Our Menu</h1>
         </div>
         <div className='flex hidden sm:flex flex-row w-full justify-end items-center gap-4'>
           <button className='p-4 hover:bg-primary hover:text-white bg-neutral-300 rounded-full'>
@@ -33,7 +40,7 @@ const SpecialDishes = () => {
 }
 
 const DishCard = ({ image, title, description, price, rating }) => (
-  <div className="relative rounded-2xl w-full shadow-lg px-6 py-6">
+  <div data-aos="zoom-in-right" className="relative rounded-2xl w-full shadow-lg px-6 py-6">
     <button className='rounded-tr-2xl rounded-bl-2xl right-0 top-0 hover:bg-white hover:text-primary absolute flex items-center justify-center h-[50px] w-[50px] bg-primary'>
       <CiHeart className='text-white hover:text-primary' fontSize={28} />
     </button>
