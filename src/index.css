@@ -5,6 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:  #39DB4A;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(transparent, #39DB4A);
+    border-radius: 5px;
+}
+
 #main-div{
     height: 100%;
     min-height: 100vh;
